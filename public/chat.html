@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mindspark Chat</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Razorpay required for upgrade button -->
+    <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+</head>
+
+<body>
+<div class="container">
+    <h1>Mindspark Chat</h1>
+
+    <p id="chatCount"></p>
+    <button onclick="subscribe()">Upgrade to Premium</button>
+
+    <div id="chatBox"></div>
+
+    <textarea id="userInput" placeholder="Ask Mindspark something..."></textarea>
+    <button onclick="sendMessage()">Send</button>
+
+    <br><br>
+    <button onclick="loadHistory()">Load Saved Chats</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
